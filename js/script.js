@@ -5,8 +5,10 @@ window.onload = function () {
 
   startButton.addEventListener("click", function () {
     startGame();
+    myAudio.play()
   });
-
+  let myAudio = document.querySelector('#audio')
+  
   function startGame() {
     console.log("start game");
     game = new Game()
